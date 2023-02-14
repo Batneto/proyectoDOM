@@ -17,9 +17,29 @@
     
 }
 
-.flexContainer{
-   
-    display: flex;
-    justify-content: center;
-    background-color: yellow;
+.container{
+    max-width: 55%;
+    text-align: center;
+    margin: 0 auto ;
+    /* background-color: yellow; */
+    height: 80%;
+    
+    
+}
+
+.sect1 {
+    /* background-color: red; */
+}
+
+.sect1 img{
+    width: 100%;
+}
+
+
+.sect1 h2{
+    /* background-color: green; */
+    padding-bottom: 10px;
+    padding-top: 20px;
+    text-align: left;
+    
 }
