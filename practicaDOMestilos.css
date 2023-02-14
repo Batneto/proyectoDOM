@@ -27,19 +27,61 @@
     
 }
 
-.sect1 {
-    /* background-color: red; */
-}
 
-.sect1 img{
+
+.section1 img{
     width: 100%;
 }
 
 
-.sect1 h2{
+.section1 h2{
     /* background-color: green; */
     padding-bottom: 10px;
     padding-top: 20px;
     text-align: left;
-    
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.carta{
+    border: 1px solid black;
+}
+
+.carta h3{
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.section2 h2{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section2 img{
+    width: 100%;
+}
+.section2 p{
+    margin-bottom: 5px;
+}
+
+
+.section3{
+    margin-bottom: 100px;
+}
+
+
+
+.section3 h2{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.section3 select{
+    width: 100%;
 }
