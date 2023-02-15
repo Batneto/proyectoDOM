@@ -49,12 +49,17 @@ opciones.append(fragment);
 
 }
 
+function cartas(){
+
+const carta1 =document.getElementById("carta1")  //todo con element by class me sale que append no es una funcion
+
+let img = document.createElement("img");
+
+carta1.append(img)
+
+}
 
 banner();
-
 opciones()
-
-
-
-
+cartas()
 
