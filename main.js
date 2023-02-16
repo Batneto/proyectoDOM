@@ -3,6 +3,8 @@
 // const selector=document.getElementsByTagName("select")
 // document.addEventListener('DOMContentLoaded'),()=>{
 
+const fragment = document.createDocumentFragment();
+
 function banner() {
 
   const banner = document.getElementById("banner"); //todo Por que si la declaro fuera no funciona
@@ -20,6 +22,8 @@ function banner() {
     "img/banner/8.jpg",
   ];
 
+
+
   let aleatorio = arrayFotos[Math.floor(Math.random() * arrayFotos.length)];
 
   img.src = aleatorio;
@@ -29,33 +33,44 @@ function banner() {
 
 
 
+function opciones() {
+
+  let opciones = document.getElementById("opciones");
 
 
-function opciones(){
-let opciones = document.getElementById("opciones");
-const fragment= document.createDocumentFragment();
 
+  let destinos = ["Madrid", "Barcelona", "Sevilla"];
 
-let destinos=["Madrid","Barcelona","Sevilla"];
+  for (i = 0; i < destinos.length; i++) {
 
-for(i=0;i<destinos.length;i++){
-
-    let ciudad =document.createElement("option");
-    ciudad.textContent=destinos[i];
+    let ciudad = document.createElement("option");
+    ciudad.textContent = destinos[i];
     fragment.append(ciudad);
+  }
+
+  opciones.append(fragment);
+
 }
 
-opciones.append(fragment);
+// carta.forEach(element =>{element.append(img)});
 
-}
+function cartas() {
 
-function cartas(){
+  const cartas = document.getElementById("cartas");
 
-const carta1 =document.getElementById("carta1")  //todo con element by class me sale que append no es una funcion
 
-let img = document.createElement("img");
+  for (i = 0; i < 3; i++) {
 
-carta1.append(img)
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    let h3 = document.createElement("h3");
+    let p = document.createElement("p");
+
+    div.append(img, h3, p)
+
+    fragment.append(div)
+  }
+  cartas.append(fragment)
 
 }
 
