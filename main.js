@@ -1,7 +1,7 @@
 // const cartas=document.getElementsByClassName("gridcontainer")
 
 // const selector=document.getElementsByTagName("select")
-// document.addEventListener('DOMContentLoaded'),()=>{
+document.addEventListener('DOMContentLoaded',()=>{
 
 const fragment = document.createDocumentFragment();
 
@@ -54,27 +54,47 @@ function opciones() {
 
 // carta.forEach(element =>{element.append(img)});
 
-function cartas() {
+// function cartas() {
 
-  const cartas = document.getElementById("cartas");
+//   const cartas = document.getElementById("cartas");
 
 
-  for (i = 0; i < 3; i++) {
+//   let carta1=[1,2,3]
+//   let carta2=[4,5,6]
+//   let carta3=[7,8,9]
 
-    let div = document.createElement("div");
-    let img = document.createElement("img");
-    let h3 = document.createElement("h3");
-    let p = document.createElement("p");
+// let cartasArray=[carta1,carta2,carta3]
 
-    div.append(img, h3, p)
+// for(i=0;i<cartasArray.length;i++){
+//   console.log(cartasArray[i]);
+//   for(j=0;j<cartasArray[i];j++){
+//     cartasArray[i]
 
-    fragment.append(div)
-  }
-  cartas.append(fragment)
+//   } 
+// }
 
-}
+  
+array.forEach(item=> {
+  item[i]
+});
+
+//   for (i = 0; i < 3; i++) {
+
+//     let div = document.createElement("div");
+//     let img = document.createElement("img");
+//     let h3 = document.createElement("h3");
+//     let p = document.createElement("p");
+
+//     div.append(img, h3, p)
+
+//     fragment.append(div)
+//   }
+//   cartas.append(fragment)
+
+// }
 
 banner();
 opciones()
-cartas()
+// cartas()
 
+})
